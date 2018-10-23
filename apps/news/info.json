@@ -1,0 +1,8 @@
+{
+  "name": "News",
+  "id": "news",
+  "description": "This app gets top headlines from News API. Learn more at newsapi.org!",
+  "scripts": ["news.js"],
+  "stylesheets": ["news.css"],
+  "height": "325px"
+}

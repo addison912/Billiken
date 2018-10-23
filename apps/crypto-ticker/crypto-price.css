@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.exchange {
+  margin: 40px;
+}

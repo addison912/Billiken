@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#doggo-pic {
+  width: 354px;
+  height: auto;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#doggo-pic:hover {
+  cursor: pointer;
+}

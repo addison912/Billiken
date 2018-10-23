@@ -1,0 +1,26 @@
+{
+  "name": "Billiken",
+  "version": "1.0",
+  "description": "Your customizable homepage.",
+  "permissions": [ "tabs" , "storage" ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+},
+
+"page_action": {
+  "default_icon": {
+      "16": "assets/images/icon/icon-placeholder-16.png",
+      "32": "assets/images/icon/icon-placeholder-32.png",
+      "48": "assets/images/icon/icon-placeholder-48.png",
+      "128": "assets/images/icon/icon-placeholder-128.png"
+  }
+},
+"icons": {
+  "16": "assets/images/icon/icon-placeholder-16.png",
+  "32": "assets/images/icon/icon-placeholder-32.png",
+  "48": "assets/images/icon/icon-placeholder-48.png",
+  "128": "assets/images/icon/icon-placeholder-128.png"
+},
+"author": "addisondrewmoore@gmail.com",
+"manifest_version": 2
+}

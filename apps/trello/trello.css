@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.trello-board-compact {
+  width: 354px;
+}
+
+.board-background .sc-gzVnrw .bbSKVD {
+  width: 354px;
+  height: 200px;
+}

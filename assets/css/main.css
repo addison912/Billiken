@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-style: none;
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* header styling starts here */
+
+.top-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #202121;
+  height: 48px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+.top-nav a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.title-box {
+  background-color: #333;
+  width: 200;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  margin: 0;
+}
+
+.title-branded {
+  font-size: 28px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #e53d00;
+  text-align: center;
+  margin: 5px 20px;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 20px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.top-nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #e53d00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content input {
+  background-color: #ccc;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.divider {
+  border-top: solid 1px lightgray;
+  height: 1px;
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+  float: right;
+  height: 24px;
+  width: 24px;
+}
+
+.profile-pic {
+  float: right;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin: 8px 20px;
+}
+
+/* Header End */
+
+body {
+  background: url("https://i.imgur.com/lyaukjs.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 0 8px 12px 8px;
+}
+
+.column {
+  display: block;
+  width: 364px;
+  margin: 0 12px;
+}
+
+.x {
+  width: 12px;
+  height: 12px;
+  margin: 5px 0;
+}
+
+.x:hover {
+  cursor: pointer;
+}
+
+.frame-header {
+  display: flex;
+}
+
+.drag-bar {
+  height: stretch;
+  width: 100%;
+}
+
+.app-frame {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  padding: 0 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #202121;
+  width: 364px;
+  margin: 12px 0 0 0;
+}
+
+iframe {
+  border: 0;
+  width: 354px;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  #workspaces-dropdown,
+  #apps-dropdown {
+    display: none;
+  }
+  .menu-btn {
+    display: inline;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+    body {
+        background-size: cover;
+    } */

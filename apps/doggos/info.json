@@ -1,0 +1,7 @@
+{
+  "name": "Doggos",
+  "id": "doggos",
+  "description": "This app gets dog pictures from the dog CEO API. Click on the dog picture to get more dog pics!",
+  "scripts": ["doggos.js"],
+  "stylesheets": ["doggos.css"]
+}

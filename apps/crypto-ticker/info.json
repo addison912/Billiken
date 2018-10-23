@@ -1,0 +1,8 @@
+{
+  "name": "Crypto Ticker",
+  "id": "crypto-ticker",
+  "description": "This app gets crypto prices from the Bitstamp.net API",
+  "scripts": ["crypto-price.js"],
+  "stylesheets": ["crypto-price.css"],
+  "height": "200px"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "workspace": "Personal Finance",
+    "sites": [
+      {
+        "name": "Balance Sheet",
+        "url": "https://docs.google.com/spreadsheets/d/1VCF1_nuCixDIVX2zT9KdwF8TPgWWj06dNX2-OL9RWFs/edit#gid=0"
+      },
+      {
+        "name": "Wells Fargo",
+        "url": "https://www.wellsfargo.com/"
+      }
+    ]
+  },
+  {
+    "workspace": "Crypto Trading",
+    "sites": [
+      {
+        "name": "GDAX",
+        "url": "https://www.coinbase.com/oauth/authorize/oauth_signin?client_id=2d06b9a69c15e183856ff52c250281f6d93f9abef819921eac0d8647bb2b61f9&meta%5Baccount%5D=all&redirect_uri=https%3A%2F%2Fpro.coinbase.com%2Foauth_redirect&response_type=code&scope=user+balance&state=820ab756-0623-4419-e80c-6a839173f851"
+      },
+      {
+        "name": "Bitstamp",
+        "url": "https://www.bitstamp.net/"
+      }
+    ]
+  }
+]

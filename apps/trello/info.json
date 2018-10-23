@@ -1,0 +1,7 @@
+{
+  "name": "Trello",
+  "id": "trello",
+  "description": "This app is kind of useless, it just links to a selected Trello board",
+  "scripts": [],
+  "stylesheets": ["trello.css"]
+}

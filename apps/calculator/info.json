@@ -1,0 +1,8 @@
+{
+  "name": "Calculator",
+  "id": "calculator",
+  "description": "This is a simple bouncing ball animation. It can be used as a placeholder.",
+  "scripts": ["calculator.js"],
+  "stylesheets": ["calculator.css"],
+  "height": "400px"
+}

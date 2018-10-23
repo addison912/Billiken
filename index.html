@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billiken</title>
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="title-box">
+                <h1 class="title-branded">Billiken</h1>
+            </div>
+            <img class="profile-pic" src="https://i.imgur.com/7f07mYf.png">
+            <img class="menu-btn" src="assets/images/menu-symbol.png">
+            <div class="dropdown" id="apps-dropdown">
+                <button onclick="dropdownFunction()" class="dropbtn">Apps ▾</button>
+                <div id="dropdown" class="dropdown-content">
+                    <div class="apps-dropdown-container">
+                        <a href="#" class="add-app" id="apps-calculator">Calculator</a>
+                        <a href="#" class="add-app" id="apps-crypto-ticker">Cryptocurrency Ticker</a>
+                        <a href="#" class="add-app" id="apps-doggos">Doggos</a>
+                        <a href="#" class="add-app" id="apps-bounce">Bounce</a>
+                        <a href="#" class="add-app" id="apps-news">News</a>
+                        <a href="#" class="add-app" id="apps-calendar">Google Calendar</a>
+                        <a href="#" class="add-app" id="apps-weather">Weather</a>
+                    </div>
+                    <div class="divider"></div>
+                    <a href="#">More ...</a>
+                </div>
+            </div>
+            <div class="dropdown" id="workspaces-dropdown">
+                <button onclick="dropdownFunction()" class="dropbtn">Workspaces ▾</button>
+                <div id="dropdown" class="dropdown-content">
+                    <input id="workspaces-add" placeholder="New Workspace">
+                    <div class="divider"></div>
+                    <a class="workspace">Personal Finance</a>
+                    <a class="workspace">Crypto Trading</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="column" id="column-1">
+            <div class="app-frame" id="news-frame">
+                <div class="frame-header">
+                    <img class="x" src="assets/images/x.png" alt="close app window">
+                    <div class="drag-bar"></div>
+                </div>
+                <iframe src="apps/news/index.html" id="news"></iframe>
+            </div>
+            <div class="app-frame" id="doggos-frame">
+                <div class="frame-header">
+                    <img class="x" src="assets/images/x.png" alt="close app window">
+                    <div class="drag-bar"></div>
+                </div>
+                <iframe src="apps/doggos/index.html" id="doggos"></iframe>
+            </div>
+        </div>
+        <div class="column" id="column-2">
+            <div class="app-frame" id="bounce-frame">
+                <div class="frame-header">
+                    <img class="x" src="assets/images/x.png" alt="close app window">
+                    <div class="drag-bar"></div>
+                </div>
+                <iframe src="apps/bounce/index.html" id="bounce"></iframe>
+            </div>
+            <div class="app-frame" id="calendar-frame">
+                <div class="frame-header">
+                    <img class="x" src="assets/images/x.png" alt="close app window">
+                    <div class="drag-bar"></div>
+                </div>
+                <iframe src="apps/calendar/index.html" id="calendar"></iframe>
+            </div>
+        </div>
+        <div class="column" id="column-3">
+            <div class="app-frame" id="calculator-frame">
+                <div class="frame-header">
+                    <img class="x" src="assets/images/x.png" alt="close app window">
+                    <div class="drag-bar"></div>
+                </div>
+                <iframe src="apps/calculator/index.html" id="calculator"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <!-- <script src="assets/js/animation.js" type="text/javascript"></script>
+    <script src="assets/js/popmotion.js" type="text/javascript"></script> -->
+</body>
+
+</html>
