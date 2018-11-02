@@ -10,6 +10,45 @@ ul {
   list-style: none;
 }
 
-.exchange {
-  margin: 40px;
+main {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  padding: 10px 5px;
+  height: 200px;
+  width: 354px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  height: 20px;
+  padding: 0 5px;
+}
+
+.row > .column:first-of-type {
+  border-left: none;
+}
+
+.row:first-of-type {
+  border-bottom: solid 1px #555;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #555;
+  height: 100%;
+}
+
+.col-3 {
+  width: 25%;
 }

@@ -3,7 +3,9 @@ const XRPlast = document.querySelector(".last");
 const XRPbid = document.querySelector(".bid");
 const XRPask = document.querySelector(".ask");
 
-setInterval(getPrice, 12000)(function getPrice() {
+setInterval(getPrice, 12000);
+
+function getPrice() {
   req = new Request(BITSTAMP_XRPUSD);
   fetch(req)
     .then(function(response) {
@@ -14,9 +16,11 @@ setInterval(getPrice, 12000)(function getPrice() {
     .then(function(processedResponse) {
       if (processedResponse !== null) {
         console.log(processedResponse);
-        XRPlast.innerHTML = `last price: $${processedResponse.last}`;
-        XRPbid.innerHTML = `bid price: $${processedResponse.bid}`;
-        XRPask.innerHTML = `ask price: $${processedResponse.ask}`;
+        XRPlast.innerHTML = `$${processedResponse.last}`;
+        XRPbid.innerHTML = `$${processedResponse.bid}`;
+        XRPask.innerHTML = `$${processedResponse.ask}`;
       }
     });
-})();
+}
+
+getPrice();
