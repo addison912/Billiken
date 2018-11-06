@@ -29,32 +29,11 @@ body {
   color: white;
   background-color: black;
   font-size: 36px;
-  padding: 20px;
+  padding: 16px 20px;
   width: 354px;
   justify-content: flex-end;
-  height: 83px;
+  height: 75px;
 }
-
-/* .input-number[type="number"],
-select,
-textarea {
-  display: flex;
-  color: white;
-  background-color: black;
-  font-size: 36px;
-  padding: 20px;
-  text-align: right;
-  width: 354px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-style: none;
-  outline: none;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
 
 button {
   -webkit-appearance: none;
@@ -65,7 +44,7 @@ button {
 .button-box {
   background-color: rgb(175, 175, 175);
   border-left: 2px solid black;
-  height: 61px;
+  height: 55px;
   font-size: 36px;
   color: #333;
   cursor: pointer;
