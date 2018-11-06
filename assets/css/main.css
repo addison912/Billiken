@@ -150,20 +150,18 @@ body {
   height: 100%;
 }
 
-.row {
+main {
   display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
+  justify-content: center;
   width: 100%;
   margin: 0;
-  border: none;
-  padding: 0 8px 12px 8px;
+  padding: 12px 8px 12px 8px;
 }
 
-.column {
-  display: block;
-  width: 364px;
-  margin: 0 12px;
+.app-container {
+  column-count: 3;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .x {
@@ -186,6 +184,7 @@ body {
 }
 
 .app-frame {
+  page-break-inside: avoid;
   display: flex;
   align-self: flex-start;
   flex-direction: column;
@@ -193,7 +192,7 @@ body {
   border-radius: 5px;
   background-color: #202121;
   width: 364px;
-  margin: 12px 0 0 0;
+  margin: 0 auto 12px auto;
 }
 
 iframe {
@@ -203,7 +202,13 @@ iframe {
   margin: 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1140px) {
+  .app-container {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 764px) {
   #workspaces-dropdown,
   #apps-dropdown {
     display: none;
@@ -211,9 +216,7 @@ iframe {
   .menu-btn {
     display: inline;
   }
+  .app-container {
+    column-count: auto;
+  }
 }
-
-/* @media only screen and (min-width: 1000px) {
-    body {
-        background-size: cover;
-    } */

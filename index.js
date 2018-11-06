@@ -44,23 +44,6 @@ resizeIframes();
 
 ////////////////////////////////////////////
 
-//hides columns with no content
-function hideEmptyColumns() {
-  let column = document.getElementsByClassName("column");
-  for (let i = 0; i < column.length; i++) {
-    let id = column[i].id;
-    console.log(id);
-    let app = column[i].getElementsByClassName("app-frame")[0];
-    if (document.getElementById(id).contains(app) == false) {
-      document.querySelector(`#${id}`).style.display = "none";
-    } else {
-      document.querySelector(`#${id}`).style.display = "block";
-    }
-  }
-}
-
-////////////////////////////////////////////
-
 // remove app frame when "x" is clicked
 function removeApp(elementId) {
   let element = document.getElementById(elementId);
@@ -88,7 +71,7 @@ addWindowCloseListeners();
 
 //adds app
 function addApp(appId) {
-  document.getElementsByClassName("column")[0].innerHTML +=
+  document.getElementsByClassName("app-container")[0].innerHTML +=
     `<div class="app-frame" id="${appId}-frame">` +
     '                <div class="frame-header">' +
     '                    <img class="x" src="assets/images/x.png" alt="close app window">' +
@@ -145,6 +128,23 @@ document
 //code below is not working
 ////////////////////////////////////////////
 
+////////////////////////////////////////////
+
+//hides columns with no content
+// function hideEmptyColumns() {
+//   let column = document.getElementsByClassName("column");
+//   for (let i = 0; i < column.length; i++) {
+//     let id = column[i].id;
+//     console.log(id);
+//     let app = column[i].getElementsByClassName("app-frame")[0];
+//     if (document.getElementById(id).contains(app) == false) {
+//       document.querySelector(`#${id}`).style.display = "none";
+//     } else {
+//       document.querySelector(`#${id}`).style.display = "block";
+//     }
+//   }
+// }
+
 //select shortest column
 // function getShortest() {
 //   let columns = document.getElementsByClassName("column");
@@ -164,23 +164,23 @@ document
 //   return shortest;
 // }
 
-function shortestColumn() {
-  let columns = document.getElementsByClassName("column");
-  let height = 0;
-  let shortest = columns[0];
-  for (let i = 0; i < columns.length; i++) {
-    if (columns[i].style.display == "none") {
-      shortest = columns[i];
-    } else if ((i = 0)) {
-      height = columns[0].offsetHeight;
-      shortest = columns[0];
-    } else if (columns[i].offsetHeight < height) {
-      height = columns[i].offsetHeight;
-      shortest = columns[i];
-    }
-    // return shortest;
-  }
-}
+// function shortestColumn() {
+//   let columns = document.getElementsByClassName("column");
+//   let height = 0;
+//   let shortest = columns[0];
+//   for (let i = 0; i < columns.length; i++) {
+//     if (columns[i].style.display == "none") {
+//       shortest = columns[i];
+//     } else if ((i = 0)) {
+//       height = columns[0].offsetHeight;
+//       shortest = columns[0];
+//     } else if (columns[i].offsetHeight < height) {
+//       height = columns[i].offsetHeight;
+//       shortest = columns[i];
+//     }
+//     // return shortest;
+//   }
+// }
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function dropdownFunction() {
