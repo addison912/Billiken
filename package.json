@@ -1,0 +1,20 @@
+{
+  "name": "billiken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addison912/billiken.git"
+  },
+  "keywords": [],
+  "author": "Addison Moore <addisondrewmoore@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addison912/billiken/issues"
+  },
+  "homepage": "https://github.com/addison912/billiken#readme"
+}
