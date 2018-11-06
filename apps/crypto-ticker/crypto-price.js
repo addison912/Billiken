@@ -1,26 +1,30 @@
-const BITSTAMP_XRPUSD = "https://www.bitstamp.net/api/v2/ticker/xrpusd/";
-const XRPlast = document.querySelector(".last");
-const XRPbid = document.querySelector(".bid");
-const XRPask = document.querySelector(".ask");
+let currencyPairs = ["btcusd", "ethusd", "xrpusd"];
 
-setInterval(getPrice, 12000);
+setInterval(getPrice, 32000);
 
 function getPrice() {
-  req = new Request(BITSTAMP_XRPUSD);
-  fetch(req)
-    .then(function(response) {
-      const processingPromise = response.json();
-      console.log("getting price");
-      return processingPromise;
-    })
-    .then(function(processedResponse) {
-      if (processedResponse !== null) {
-        console.log(processedResponse);
-        XRPlast.innerHTML = `$${processedResponse.last}`;
-        XRPbid.innerHTML = `$${processedResponse.bid}`;
-        XRPask.innerHTML = `$${processedResponse.ask}`;
-      }
-    });
-}
+  for (let i = 0; i < currencyPairs.length; i++) {
+    let pair = currencyPairs[i];
+    let BITSTAMP = `https://www.bitstamp.net/api/v2/ticker/${pair}/`;
+    const last = document.querySelector(`.${pair}> .last`);
+    const bid = document.querySelector(`.${pair}> .bid`);
+    const ask = document.querySelector(`.${pair}> .ask`);
 
+    req = new Request(BITSTAMP);
+    fetch(req)
+      .then(function(response) {
+        const processingPromise = response.json();
+        console.log("getting price");
+        return processingPromise;
+      })
+      .then(function(processedResponse) {
+        if (processedResponse !== null) {
+          console.log(processedResponse);
+          last.innerHTML = `$${processedResponse.last}`;
+          bid.innerHTML = `$${processedResponse.bid}`;
+          ask.innerHTML = `$${processedResponse.ask}`;
+        }
+      });
+  }
+}
 getPrice();

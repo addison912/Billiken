@@ -52,3 +52,12 @@ h2 {
 .col-3 {
   width: 25%;
 }
+
+#add-pair {
+  color: #777;
+}
+
+#add-pair:hover {
+  color: #ccc;
+  cursor: pointer;
+}

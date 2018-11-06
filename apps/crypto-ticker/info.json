@@ -4,5 +4,6 @@
   "description": "This app gets crypto prices from the Bitstamp.net API",
   "scripts": ["crypto-price.js"],
   "stylesheets": ["crypto-price.css"],
-  "height": "200px"
+  "height": "200px",
+  "trading-pairs": ["btcusd", "ethusd", "xrpusd"]
 }
